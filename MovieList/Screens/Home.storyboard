@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ULe-cR-yk5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="DXZ-8Z-U0r">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ULe-cR-yk5" customClass="HomeViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Axf-V3-khf"/>
+                        <viewControllerLayoutGuide type="bottom" id="DLw-XT-rvb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="deV-WG-Nkc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-St-CcP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DLw-XT-rvb" firstAttribute="top" secondItem="F7d-St-CcP" secondAttribute="bottom" id="CFo-mC-WhF"/>
+                            <constraint firstItem="F7d-St-CcP" firstAttribute="top" secondItem="Axf-V3-khf" secondAttribute="bottom" id="VTF-5Z-VTG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F7d-St-CcP" secondAttribute="trailing" constant="-16" id="XQX-go-3dW"/>
+                            <constraint firstItem="F7d-St-CcP" firstAttribute="leading" secondItem="deV-WG-Nkc" secondAttribute="leadingMargin" constant="-16" id="heh-5J-5IT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HomeMovieList" destination="F7d-St-CcP" id="kNj-Gq-lxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLS-Gu-5EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359.19999999999999" y="-218.1409295352324"/>
+        </scene>
+    </scenes>
+</document>

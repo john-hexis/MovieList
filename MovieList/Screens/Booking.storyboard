@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Booking View Controiller-->
+        <scene sceneID="yr8-1H-gTo">
+            <objects>
+                <viewController storyboardIdentifier="BookingViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OAF-Jw-Iks" customClass="BookingViewControiller" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hD1-bo-BgE"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb7-rU-z9q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DZo-tP-Q4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kob-CK-0BC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXf-Vz-eGU">
+                                <rect key="frame" x="19" y="25" width="32" height="32"/>
+                                <state key="normal" image="left-arrow"/>
+                                <connections>
+                                    <action selector="btnBackTapped:" destination="OAF-Jw-Iks" eventType="touchUpInside" id="mmx-eD-lV7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eXf-Vz-eGU" firstAttribute="top" secondItem="hD1-bo-BgE" secondAttribute="bottom" constant="5" id="3Q1-dR-PNE"/>
+                            <constraint firstItem="eXf-Vz-eGU" firstAttribute="leading" secondItem="DZo-tP-Q4Q" secondAttribute="leadingMargin" constant="3" id="SzN-4d-ftB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WebView" destination="Kob-CK-0BC" id="lx6-l5-Eps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucr-ke-MVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-arrow" width="32" height="32"/>
+    </resources>
+</document>

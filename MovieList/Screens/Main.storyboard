@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewID-->
+        <scene sceneID="6mW-bL-p8Y">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeViewID" storyboardName="Home" referencedIdentifier="HomeViewID" id="KVQ-wa-k6f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffU-r2-G9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="-294"/>
+        </scene>
+        <!--DetailViewID-->
+        <scene sceneID="FVO-ce-NgU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewID" storyboardName="Detail" referencedIdentifier="DetailViewID" id="sZm-Tv-u3i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngO-ET-UqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="-238"/>
+        </scene>
+        <!--BookingViewID-->
+        <scene sceneID="oR4-6N-65S">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BookingViewID" storyboardName="Booking" referencedIdentifier="BookingViewID" id="dSQ-qh-GZD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLC-c0-Ikt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643" y="-176"/>
+        </scene>
+    </scenes>
+</document>

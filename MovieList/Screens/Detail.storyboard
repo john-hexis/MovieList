@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="m1W-s1-wVh">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6H4-IW-yhO" customClass="DetailViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YTU-he-oTx"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIP-Q0-BwG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d3N-Ik-0U9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UTE-ZC-HFD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec1-78-pc9">
+                                <rect key="frame" x="12" y="25" width="32" height="32"/>
+                                <state key="normal" image="left-arrow"/>
+                                <connections>
+                                    <action selector="btnBackTapped:" destination="6H4-IW-yhO" eventType="touchUpInside" id="cD5-AQ-xgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-0s-qTB">
+                                <rect key="frame" x="331" y="25" width="32" height="32"/>
+                                <state key="normal" image="ticket"/>
+                                <connections>
+                                    <action selector="btnBuyTixTapped:" destination="6H4-IW-yhO" eventType="touchUpInside" id="fNA-n7-giZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wIP-Q0-BwG" firstAttribute="top" secondItem="UTE-ZC-HFD" secondAttribute="bottom" id="4Pz-fa-Wrw"/>
+                            <constraint firstItem="YHx-0s-qTB" firstAttribute="top" secondItem="YTU-he-oTx" secondAttribute="bottom" constant="5" id="4eB-6j-sbP"/>
+                            <constraint firstItem="ec1-78-pc9" firstAttribute="top" secondItem="YTU-he-oTx" secondAttribute="bottom" constant="5" id="9BL-Zj-LgD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UTE-ZC-HFD" secondAttribute="trailing" constant="-16" id="NF8-04-9hd"/>
+                            <constraint firstItem="UTE-ZC-HFD" firstAttribute="leading" secondItem="d3N-Ik-0U9" secondAttribute="leadingMargin" constant="-16" id="Pgc-l4-rTP"/>
+                            <constraint firstItem="ec1-78-pc9" firstAttribute="leading" secondItem="d3N-Ik-0U9" secondAttribute="leadingMargin" constant="-4" id="ZfL-gr-Idg"/>
+                            <constraint firstItem="UTE-ZC-HFD" firstAttribute="top" secondItem="YTU-he-oTx" secondAttribute="bottom" constant="-20" id="cfP-uG-xZo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YHx-0s-qTB" secondAttribute="trailing" constant="-4" id="coO-0m-BJf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MovieDetailTable" destination="UTE-ZC-HFD" id="3y4-Ln-PL7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2m-Hb-ZzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-arrow" width="32" height="32"/>
+        <image name="ticket" width="32" height="32"/>
+    </resources>
+</document>
